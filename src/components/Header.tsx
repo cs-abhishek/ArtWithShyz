@@ -22,10 +22,10 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-6">
-            <a href="#" className="text-gray-700 hover:text-pink-600">Home</a>
-            <a href="#" className="text-gray-700 hover:text-pink-600">Categories</a>
-            <a href="#" className="text-gray-700 hover:text-pink-600">Collections</a>
-            <a href="#" className="text-gray-700 hover:text-pink-600">About</a>
+            <button className="text-gray-700 hover:text-pink-600">Home</button>
+            <button className="text-gray-700 hover:text-pink-600">Categories</button>
+            <button className="text-gray-700 hover:text-pink-600">Collections</button>
+            <button className="text-gray-700 hover:text-pink-600">About</button>
           </nav>
 
           {/* Actions */}

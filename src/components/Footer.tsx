@@ -58,9 +58,9 @@ const Footer = () => {
               <h4 className="font-bold text-lg mb-4">Categories</h4>
               <div className="flex flex-wrap gap-2">
                 {["Paintings", "Digital Art", "Sketches", "Custom Art", "Portraits", "Canvas", "Watercolor", "Art Supplies", "Prints"].map((item) => (
-                  <a key={item} href="#" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  <button key={item} className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
                     {item}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
@@ -70,9 +70,9 @@ const Footer = () => {
               <h4 className="font-bold text-lg mb-4">Collections</h4>
               <div className="flex flex-wrap gap-2">
                 {["Digital Art", "Canvas Paintings", "Custom Portraits", "Abstract Art", "Art Supplies"].map((item) => (
-                  <a key={item} href="#" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  <button key={item} className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
                     {item}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
@@ -82,9 +82,9 @@ const Footer = () => {
               <h4 className="font-bold text-lg mb-4">Help</h4>
               <div className="space-y-2">
                 {["Store Policies", "Track your Order", "Return Policy", "Privacy Policy"].map((item) => (
-                  <a key={item} href="#" className="block text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  <button key={item} className="block text-gray-300 hover:text-pink-400 transition-colors text-sm text-left">
                     {item}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
