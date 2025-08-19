@@ -6,31 +6,31 @@ const Collections = () => {
       id: 1,
       title: "Digital Art",
       description: "Beautiful digital artwork and prints",
-      image: "/images/digital-art.png"
+      image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=500&h=300&fit=crop&crop=center"
     },
     {
       id: 2,
       title: "Canvas Paintings",
       description: "Original canvas paintings and artwork",
-      image: "/images/canvas.png"
+      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=500&h=300&fit=crop&crop=center"
     },
     {
       id: 3,
       title: "Custom Portraits",
       description: "Personalized portrait drawings",
-      image: "/images/portraits.png"
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=500&h=300&fit=crop&crop=center"
     },
     {
       id: 4,
       title: "Abstract Art",
       description: "Modern abstract art pieces",
-      image: "/images/abstract.png"
+      image: "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=500&h=300&fit=crop&crop=center"
     },
     {
       id: 5,
       title: "Art Supplies",
       description: "Quality art supplies and materials",
-      image: "/images/supplies.png"
+      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=300&fit=crop&crop=center"
     }
   ];
 
@@ -42,8 +42,12 @@ const Collections = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {collections.map((collection) => (
             <div key={collection.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="bg-gradient-to-br from-pink-100 to-purple-100 h-48 flex items-center justify-center">
-                <span className="text-gray-500">Collection Image</span>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={collection.image} 
+                  alt={collection.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{collection.title}</h3>

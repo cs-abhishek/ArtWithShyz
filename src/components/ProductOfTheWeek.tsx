@@ -9,8 +9,12 @@ const ProductOfTheWeek = () => {
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="md:flex">
             <div className="md:w-1/2">
-              <div className="bg-gray-200 h-80 flex items-center justify-center">
-                <span className="text-gray-500">Product Image</span>
+              <div className="h-80 overflow-hidden rounded-l-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=600&h=600&fit=crop&crop=center" 
+                  alt="Custom Art Piece"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="md:w-1/2 p-8">
