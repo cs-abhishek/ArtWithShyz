@@ -587,7 +587,9 @@ function App() {
         {/* Header for logged in users */}
         <header className="bg-white shadow-sm">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-amber-700">🎨 ArtWithShyz</h1>
+            <div className="flex items-center">
+              <img src="/logo.png" alt="ArtWithShyz Logo" className="w-24 h-24 object-contain" />
+            </div>
             <div className="flex items-center space-x-4">
               <span className="text-gray-700">Welcome, {user?.name || 'User'}!</span>
               <button
@@ -618,7 +620,9 @@ function App() {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-amber-700 mb-4">🎨 ArtWithShyz</h1>
+          <div className="flex items-center justify-center mb-4">
+            <img src="/logo.png" alt="ArtWithShyz Logo" className="w-32 h-32 object-contain" />
+          </div>
           <nav className="space-x-4">
             <button 
               onClick={() => setCurrentView('home')}
